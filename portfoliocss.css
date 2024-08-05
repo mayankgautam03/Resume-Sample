@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+h2 {
+    color: black;
+}
+p{
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+  background: url(S.svg);
+  width: 1000px; ;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn-main {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+
+}
+
+.btn-main:hover {
+    background: #2980b9;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+}
+
+.about-content img {
+    border-radius: 50%;
+    
+    
+    height: 300px;
+    object-fit: cover;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.project-info p {
+    margin: 0;
+}
+
+/* Contact Form */
+#contact {
+    padding: 60px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.photos border {border-top: 5px;
+    animation: borderrotor 2s infinite linear;
+    
+}
+
+@keyframes borderrotor {
+    from{ transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
